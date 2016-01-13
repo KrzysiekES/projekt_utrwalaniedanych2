@@ -20,14 +20,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:/beans.xml" })
-@TransactionConfiguration(transactionManager = "txManager", defaultRollback = true)
-@Transactional
+	@RunWith(SpringJUnit4ClassRunner.class)
+	@ContextConfiguration(locations = { "classpath:/beans.xml" })
+	@TransactionConfiguration(transactionManager = "txManager", defaultRollback = true)
+	@Transactional
 public class ManagerTest {
 
 	@Autowired
-	Manager m;
+	Manager m; //Wywołanie interfejsu manager
 
 	private final String stacja1 = "stacja1";
 	private final String opis1 = "opis1";
@@ -53,7 +53,6 @@ public class ManagerTest {
 
 	@After
 	public void usunTestowaneDane() {
-
 		List<Program> programy = m.dajWszystkieProgramy();
 		List<Stacja> stacje = m.dajWszystkieStacje();
 		boolean usun;
@@ -82,12 +81,11 @@ public class ManagerTest {
 
 	@Test
 	public void sprawdzPobierzPoId() {
-
 		Stacja s = new Stacja();
 		s.setStacja(stacja1);
 		s.setOpis(opis1);
+		
 		Program p = new Program();
-
 		p.setStacja(s);
 		p.setNazwa(program1);
 		p.setRodzaj(rodzaj1);
@@ -101,7 +99,6 @@ public class ManagerTest {
 		assertEquals(sId, ss.getId());
 		assertEquals(stacja1, ss.getStacja());
 		assertEquals(opis1, ss.getOpis());
-
 		assertEquals(pId, ps.getId());
 		assertEquals(s.getStacja(), ps.getStacja().getStacja());
 		assertEquals(s.getOpis(), ps.getStacja().getOpis());
@@ -112,14 +109,11 @@ public class ManagerTest {
 
 	@Test
 	public void sprawdzDodaj() {
-
 		Stacja s = new Stacja();
-
 		s.setStacja(stacja1);
 		s.setOpis(opis1);
 
 		Program p = new Program();
-
 		p.setStacja(s);
 		p.setNazwa(program1);
 		p.setRodzaj(rodzaj1);
@@ -144,12 +138,10 @@ public class ManagerTest {
 	public void sprawdzEdytuj() {
 
 		Stacja s = new Stacja();
-
 		s.setStacja(stacja1);
 		s.setOpis(opis1);
 
 		Program p = new Program();
-
 		p.setStacja(s);
 		p.setNazwa(program1);
 		p.setRodzaj(rodzaj1);
@@ -188,7 +180,6 @@ public class ManagerTest {
 				}
 			}
 		}
-
 		assertEquals(j, 1);
 		assertEquals(i + j, programy2.size());
 		assertEquals(programy.size(), programy2.size());
@@ -211,7 +202,6 @@ public class ManagerTest {
 				}
 			}
 		}
-
 		assertEquals(j, 1);
 		assertEquals(i + j, stacje2.size());
 		assertEquals(stacje.size(), stacje2.size());
@@ -219,24 +209,20 @@ public class ManagerTest {
 
 	@Test
 	public void sprawdzUsun() {
-
 		Stacja s = new Stacja();
-
 		s.setStacja(stacja1);
 		s.setOpis(opis1);
 
 		Program p = new Program();
-
 		p.setStacja(s);
 		p.setNazwa(program1);
 		p.setRodzaj(rodzaj1);
-
+		
 		Long sId = m.dodaj(s);
 		Long pId = m.dodaj(p);
 
 		List<Program> programy = m.dajWszystkieProgramy();
 		List<Stacja> stacje = m.dajWszystkieStacje();
-
 		m.usun(p);
 		m.usun(s);
 
@@ -245,13 +231,11 @@ public class ManagerTest {
 
 		Program ps = m.pobierzProgramPoId(pId);
 		Stacja ss = m.pobierzStacjePoId(sId);
-
 		assertEquals(ps, null);
 		assertEquals(ss, null);
 
 		List<Program> programy2 = m.dajWszystkieProgramy();
 		List<Stacja> stacje2 = m.dajWszystkieStacje();
-
 		assertEquals(programy2.size(), ileP - 1);
 		assertEquals(stacje2.size(), ileS - 1);
 
@@ -281,7 +265,6 @@ public class ManagerTest {
 				}
 			}
 		}
-
 		assertEquals(stacje2.size(), i);
 	}
 
@@ -290,27 +273,22 @@ public class ManagerTest {
 
 		List<Program> programy = m.dajWszystkieProgramy();
 		List<Stacja> stacje = m.dajWszystkieStacje();
-
 		int ileP = programy.size();
 		int ileS = stacje.size();
 
 		Stacja s = new Stacja();
-
 		s.setStacja(stacja1);
 		s.setOpis(opis1);
 
 		Program p = new Program();
-
 		p.setStacja(s);
 		p.setNazwa(program1);
 		p.setRodzaj(rodzaj1);
-
 		m.dodaj(s);
 		m.dodaj(p);
 
 		programy = m.dajWszystkieProgramy();
 		stacje = m.dajWszystkieStacje();
-
 		assertEquals(ileP + 1, programy.size());
 		assertEquals(ileS + 1, stacje.size());
 
@@ -328,31 +306,24 @@ public class ManagerTest {
 	public void sprawdzWyszukajProgramyWgWzorcaStacjii() {
 
 		Stacja s = new Stacja();
-
 		s.setStacja(stacja1);
 		s.setOpis(opis1);
 
 		Program p = new Program();
-
 		p.setStacja(s);
 		p.setNazwa(program1);
 		p.setRodzaj(rodzaj1);
-
 		m.dodaj(s);
 		m.dodaj(p);
 
-		// String wzor = stacja1.substring(1, stacja1.length()-1);
 		String wzor = stacja1;
-
 		int ile = 0;
 
 		for (Long l : dodaneProgramy) {
 			if (Pattern.compile(".*" + wzor + ".*").matcher(m.pobierzProgramPoId(l).getStacja().getStacja()).matches())
 				ile++;
 		}
-
-		List<Program> lp = m.wyszukajProgramyWgWzorcaStacjii(wzor);
-
+		List<Program> lp = m.wyszukajProgramyWgWzorcaStacjii(wzor); 
 		assertEquals(lp.size(), ile + 1);
 	}
 
@@ -361,10 +332,8 @@ public class ManagerTest {
 
 		Stacja s1 = new Stacja();
 		Stacja s2 = new Stacja();
-
 		s1.setStacja(stacja1);
 		s1.setOpis(opis1);
-
 		s2.setStacja(stacja2);
 		s2.setOpis(opis2);
 
@@ -377,22 +346,18 @@ public class ManagerTest {
 		p1.setStacja(s1);
 		p1.setNazwa(program1);
 		p1.setRodzaj(rodzaj1);
-
 		p2.setStacja(s1);
 		p2.setNazwa(program2);
 		p2.setRodzaj(rodzaj2);
-
 		m.dodaj(p1);
 		m.dodaj(p2);
 
 		assertEquals(m.wyszukajProgramy(s1).size(), 2);
-
 		for (Program p : m.wyszukajProgramy(s1)) {
 			assertEquals(s1.getId(), p.getStacja().getId());
 			assertEquals(s1.getStacja(), p.getStacja().getStacja());
 			assertEquals(s1.getOpis(), p.getStacja().getOpis());
 		}
-
 		assertEquals(m.wyszukajProgramy(s2).size(), 0);
 
 	}
@@ -404,16 +369,12 @@ public class ManagerTest {
 
 		s1.setStacja(stacja1);
 		s1.setOpis(opis1);
-
 		m.dodaj(s1);
-
 		Program p1 = new Program();
 		Program p2 = new Program();
-
 		p1.setStacja(s1);
 		p1.setNazwa(program1);
 		p1.setRodzaj(rodzaj1);
-
 		p2.setStacja(s1);
 		p2.setNazwa(program2);
 		p2.setRodzaj(rodzaj2);
@@ -422,21 +383,17 @@ public class ManagerTest {
 		Long idP2 = m.dodaj(p2);
 
 		List<Program> programy = m.dajWszystkieProgramy();
-
 		m.usunZaleznosci(s1);
-
+		
 		Program ps1 = m.pobierzProgramPoId(idP1);
 		Program ps2 = m.pobierzProgramPoId(idP2);
-
 		assertEquals(ps1, null);
 		assertEquals(ps2, null);
-
+		
 		List<Program> programy2 = m.dajWszystkieProgramy();
-
 		assertEquals(programy2.size(), programy.size() - 2);
-
+		
 		int i = 0;
-
 		for (Program prog : programy) {
 			for (Program prog2 : programy2)
 				if (prog.getId() == prog2.getId()) {
@@ -447,15 +404,12 @@ public class ManagerTest {
 					i++;
 				}
 		}
-
 		assertEquals(programy2.size(), i);
 	}
 
 	@Test
 	public void sprawdzUsuwanieKaskadowe() {
-
 		Stacja s1 = new Stacja();
-
 		s1.setStacja(stacja1);
 		s1.setOpis(opis1);
 
@@ -463,11 +417,9 @@ public class ManagerTest {
 
 		Program p1 = new Program();
 		Program p2 = new Program();
-
 		p1.setStacja(s1);
 		p1.setNazwa(program1);
 		p1.setRodzaj(rodzaj1);
-
 		p2.setStacja(s1);
 		p2.setNazwa(program2);
 		p2.setRodzaj(rodzaj2);
@@ -478,7 +430,6 @@ public class ManagerTest {
 		List<Program> programy = m.dajWszystkieProgramy();
 
 		m.usun(s1);
-
 		Program ps1 = m.pobierzProgramPoId(idP1);
 		Program ps2 = m.pobierzProgramPoId(idP2);
 
@@ -490,7 +441,6 @@ public class ManagerTest {
 		assertEquals(programy2.size(), programy.size() - 2);
 
 		int i = 0;
-
 		for (Program prog : programy) {
 			for (Program prog2 : programy2)
 				if (prog.getId() == prog2.getId()) {
@@ -501,7 +451,6 @@ public class ManagerTest {
 					i++;
 				}
 		}
-
 		assertEquals(programy2.size(), i);
 	}
 }
