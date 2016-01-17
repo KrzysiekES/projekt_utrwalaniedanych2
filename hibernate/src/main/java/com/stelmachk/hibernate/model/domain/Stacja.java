@@ -1,5 +1,4 @@
 package com.stelmachk.hibernate.model.domain;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +13,7 @@ public class Stacja {
     private String stacja;
     private String opis;
     private List<Program> programy = new ArrayList<Program>();
-
-    //Kontruktory
+  
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
@@ -29,6 +27,7 @@ public class Stacja {
     public List<Program> getProgramy() {
         return programy;
     }
+  
     public void setProgramy(List<Program> programy) {
         this.programy = programy;
     }
@@ -37,6 +36,7 @@ public class Stacja {
     public String getStacja() {
         return stacja;
     }
+  
     public void setStacja(String stacja) {
         this.stacja = stacja;
     }

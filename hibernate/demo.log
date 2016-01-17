@@ -69,3 +69,1346 @@
 2016-01-12 18:15:23,420 INFO  [DatabaseMetadata]  - table not found: Program
 2016-01-12 18:15:23,422 INFO  [DatabaseMetadata]  - table not found: Stacja
 2016-01-12 18:15:23,877 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 12:45:15,407 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 12:45:15,470 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 12:45:15,487 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 12:45:15,492 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 12:45:15,564 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 12:45:16,497 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 12:45:16,516 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 12:45:16,545 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 12:45:16,647 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 12:45:16,648 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 12:45:16,648 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 12:45:16,718 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 12:45:16,781 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 12:45:16,787 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 12:45:16,845 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 12:45:19,662 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 12:45:19,988 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 12:45:19,988 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 12:45:20,015 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 12:45:20,027 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 12:45:20,027 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 12:45:20,027 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 12:45:20,027 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 12:45:20,028 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 12:45:20,041 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 12:45:20,041 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 12:45:20,041 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 12:45:20,042 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 12:45:20,042 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 12:45:20,042 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 12:45:20,042 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 12:45:20,042 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 12:45:20,068 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 12:45:20,068 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 12:45:20,068 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 12:45:20,068 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 12:45:20,068 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 12:45:20,068 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 12:45:20,069 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 12:45:20,070 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 12:45:20,104 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 12:45:20,111 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 12:45:20,111 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 12:45:20,111 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 12:45:20,111 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 12:45:20,112 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 12:45:20,757 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 12:45:20,787 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 12:45:20,787 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 12:45:20,787 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 12:45:20,788 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 12:45:20,788 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 12:45:20,788 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 12:45:20,788 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 12:45:20,788 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 12:45:20,788 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 12:45:21,886 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 12:45:23,560 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 12:45:23,602 INFO  [DatabaseMetadata]  - table not found: Program
+2016-01-15 12:45:23,604 INFO  [DatabaseMetadata]  - table not found: Stacja
+2016-01-15 12:45:23,606 INFO  [DatabaseMetadata]  - table not found: Program
+2016-01-15 12:45:23,607 INFO  [DatabaseMetadata]  - table not found: Stacja
+2016-01-15 12:45:25,491 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:06:45,390 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:06:45,424 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:06:45,426 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:06:45,432 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:06:45,435 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:06:45,584 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:06:45,602 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:06:45,621 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:06:45,682 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:06:45,682 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:06:45,682 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:06:45,736 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:06:45,742 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:06:45,747 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:06:45,751 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:06:46,104 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:06:46,131 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:06:46,131 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:06:46,133 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:06:46,135 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:06:46,135 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:06:46,135 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:06:46,135 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:06:46,135 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:06:46,136 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:06:46,137 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:06:46,137 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:06:46,138 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:06:46,138 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:06:46,138 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:06:46,138 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:06:46,138 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:06:46,140 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:06:46,140 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:06:46,140 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:06:46,140 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:06:46,140 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:06:46,140 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:06:46,142 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:06:46,142 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:06:46,147 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:06:46,148 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:06:46,148 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:06:46,148 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:06:46,149 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:06:46,149 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:06:46,183 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:06:46,194 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 13:06:46,194 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 13:06:46,195 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 13:06:46,606 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:06:46,807 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:06:46,888 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:06:46,889 INFO  [TableMetadata]  - columns: [id_religia, id, nazwa, rodzaj]
+2016-01-15 13:06:46,889 INFO  [TableMetadata]  - foreign keys: [fk50c7b664218037bd]
+2016-01-15 13:06:46,889 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10108_10109, sys_idx_10117]
+2016-01-15 13:06:46,896 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:06:46,896 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:06:46,896 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:06:46,896 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10113_10114]
+2016-01-15 13:06:47,122 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,122 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,130 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,149 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,149 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,150 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,161 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,162 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,162 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,178 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,178 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,179 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,194 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,194 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,195 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,206 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,206 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,207 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,220 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,220 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,221 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,232 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,232 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,233 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,249 WARN  [JDBCExceptionReporter]  - SQL Error: -10, SQLState: 23502
+2016-01-15 13:06:47,249 ERROR [JDBCExceptionReporter]  - integrity constraint violation: NOT NULL check constraint; SYS_CT_10107 table: PROGRAM column: ID_RELIGIA
+2016-01-15 13:06:47,250 ERROR [AssertionFailure]  - an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session)
+org.hibernate.AssertionFailure: null id in com.stelmachk.hibernate.model.domain.Program entry (don't flush the Session after an exception occurs)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.checkId(DefaultFlushEntityEventListener.java:82)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.getValues(DefaultFlushEntityEventListener.java:190)
+	at org.hibernate.event.def.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:147)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:219)
+	at org.hibernate.event.def.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:99)
+	at org.hibernate.event.def.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:58)
+	at org.hibernate.impl.SessionImpl.autoFlushIfRequired(SessionImpl.java:1185)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1261)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.stelmachk.hibernate.model.service.ManagerImpl.dajWszystkieProgramy(ManagerImpl.java:87)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy25.dajWszystkieProgramy(Unknown Source)
+	at com.stelmachk.hibernate.model.service.ManagerTest.usunTestowaneDane(ManagerTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-01-15 13:06:47,259 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:07:29,130 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:07:29,138 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:07:29,140 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:07:29,145 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:07:29,149 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:07:29,247 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:07:29,265 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:07:29,284 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:07:29,333 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:07:29,333 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:07:29,333 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:07:29,369 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:07:29,374 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:07:29,379 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:07:29,384 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:07:29,691 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:07:29,721 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:07:29,721 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:07:29,723 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:07:29,724 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:07:29,724 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:07:29,724 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:07:29,724 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:07:29,724 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:07:29,725 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:07:29,725 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:07:29,725 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:07:29,726 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:07:29,726 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:07:29,726 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:07:29,727 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:07:29,727 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:07:29,729 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:07:29,729 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:07:29,730 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:07:29,730 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:07:29,730 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:07:29,730 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:07:29,731 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:07:29,731 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:07:29,735 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:07:29,736 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:07:29,736 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:07:29,737 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:07:29,737 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:07:29,737 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:07:29,764 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:07:29,771 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 13:07:29,771 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:07:29,771 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:07:29,771 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 13:07:29,771 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 13:07:29,772 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:07:29,772 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:07:29,772 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 13:07:29,772 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 13:07:30,099 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:07:30,303 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:07:30,315 INFO  [DatabaseMetadata]  - table not found: Program
+2016-01-15 13:07:30,317 INFO  [DatabaseMetadata]  - table not found: Stacja
+2016-01-15 13:07:30,318 INFO  [DatabaseMetadata]  - table not found: Program
+2016-01-15 13:07:30,320 INFO  [DatabaseMetadata]  - table not found: Stacja
+2016-01-15 13:07:30,739 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:07:38,261 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:07:38,270 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:07:38,271 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:07:38,276 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:07:38,280 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:07:38,392 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:07:38,410 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:07:38,429 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:07:38,489 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:07:38,489 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:07:38,489 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:07:38,523 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:07:38,528 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:07:38,534 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:07:38,538 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:07:38,841 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:07:38,861 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:07:38,862 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:07:38,863 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:07:38,865 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:07:38,865 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:07:38,865 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:07:38,865 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:07:38,865 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:07:38,866 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:07:38,866 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:07:38,866 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:07:38,867 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:07:38,867 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:07:38,867 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:07:38,867 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:07:38,867 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:07:38,869 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:07:38,869 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:07:38,870 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:07:38,870 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:07:38,870 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:07:38,870 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:07:38,871 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:07:38,871 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:07:38,876 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:07:38,877 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:07:38,877 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:07:38,877 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:07:38,878 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:07:38,878 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:07:38,909 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:07:38,928 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 13:07:38,929 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 13:07:39,215 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:07:39,399 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:07:39,440 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:07:39,441 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:07:39,441 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:07:39,441 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10106_10107, sys_idx_10115]
+2016-01-15 13:07:39,446 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:07:39,446 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:07:39,446 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:07:39,446 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10111_10112]
+2016-01-15 13:07:39,830 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:24:24,519 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:24:24,527 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:24:24,529 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:24:24,533 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:24:24,538 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:24:24,642 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:24:24,661 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:24:24,680 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:24:24,729 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:24:24,730 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:24:24,730 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:24:24,765 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:24:24,786 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:24:24,791 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:24:24,796 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:24:25,109 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:24:25,132 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:24:25,133 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:24:25,134 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:24:25,136 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:24:25,136 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:24:25,136 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:24:25,136 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:24:25,136 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:24:25,137 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:24:25,137 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:24:25,137 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:24:25,138 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:24:25,138 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:24:25,139 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:24:25,139 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:24:25,139 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:24:25,141 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:24:25,141 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:24:25,142 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:24:25,142 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:24:25,142 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:24:25,142 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:24:25,143 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:24:25,143 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:24:25,150 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:24:25,151 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:24:25,151 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:24:25,151 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:24:25,151 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:24:25,151 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:24:25,179 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:24:25,187 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 13:24:25,187 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:24:25,187 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:24:25,187 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 13:24:25,187 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 13:24:25,188 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:24:25,188 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:24:25,188 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 13:24:25,188 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 13:24:25,484 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:24:25,706 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:24:25,747 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:24:25,748 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:24:25,748 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:24:25,748 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10106_10107, sys_idx_10115]
+2016-01-15 13:24:25,753 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:24:25,753 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:24:25,753 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:24:25,753 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10111_10112]
+2016-01-15 13:24:26,196 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:31:12,240 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:31:12,246 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:31:12,247 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:31:12,249 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:31:12,252 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:31:12,374 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:31:12,392 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:31:12,410 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:31:12,456 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:31:12,456 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:31:12,457 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:31:12,505 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:31:12,509 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:31:12,516 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:31:12,520 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:31:13,002 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:31:13,028 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:31:13,028 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:31:13,029 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:31:13,030 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:31:13,030 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:31:13,030 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:31:13,030 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:31:13,030 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:31:13,031 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:31:13,031 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:31:13,031 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:31:13,031 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:31:13,031 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:31:13,031 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:31:13,032 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:31:13,032 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:31:13,033 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:31:13,033 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:31:13,033 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:31:13,033 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:31:13,033 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:31:13,033 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:31:13,034 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:31:13,034 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:31:13,037 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:31:13,037 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:31:13,037 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:31:13,037 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:31:13,037 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:31:13,037 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:31:13,061 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:31:13,065 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1b843ba
+2016-01-15 13:31:13,065 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@ec96c6
+2016-01-15 13:31:13,065 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:31:13,066 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:31:13,066 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@16d6c1e
+2016-01-15 13:31:13,066 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:31:13,066 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:31:13,066 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@c9bd38
+2016-01-15 13:31:13,066 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@12e19ca
+2016-01-15 13:31:13,469 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:31:13,707 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:31:13,737 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:31:13,737 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:31:13,737 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:31:13,737 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10106_10107, sys_idx_10115]
+2016-01-15 13:31:13,742 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:31:13,742 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:31:13,743 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:31:13,743 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10111_10112]
+2016-01-15 13:31:14,142 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:32:36,934 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:32:36,941 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:32:36,942 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:32:36,945 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:32:36,950 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:32:37,062 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:32:37,080 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:32:37,106 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:32:37,153 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:32:37,153 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:32:37,153 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:32:37,181 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:32:37,186 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:32:37,192 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:32:37,196 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:32:37,497 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:32:37,515 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:32:37,515 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:32:37,516 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:32:37,517 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:32:37,517 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:32:37,517 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:32:37,517 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:32:37,517 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:32:37,518 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:32:37,520 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:32:37,520 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:32:37,520 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:32:37,520 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:32:37,520 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:32:37,520 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:32:37,520 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:32:37,521 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:32:37,523 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:32:37,524 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:32:37,524 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:32:37,524 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:32:37,524 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:32:37,524 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:32:37,542 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:32:37,546 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1b843ba
+2016-01-15 13:32:37,546 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@ec96c6
+2016-01-15 13:32:37,546 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:32:37,547 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:32:37,547 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@16d6c1e
+2016-01-15 13:32:37,547 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:32:37,547 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:32:37,547 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@c9bd38
+2016-01-15 13:32:37,547 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@12e19ca
+2016-01-15 13:32:37,793 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:32:37,988 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:32:38,014 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:32:38,014 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:32:38,014 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:32:38,014 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10106_10107, sys_idx_10115]
+2016-01-15 13:32:38,017 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:32:38,017 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:32:38,017 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:32:38,017 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10111_10112]
+2016-01-15 13:32:38,390 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:41:27,377 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:41:27,394 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:41:27,396 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:41:27,398 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:41:27,401 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:41:27,497 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:41:27,512 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:41:27,529 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:41:27,575 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:41:27,575 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:41:27,576 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:41:27,613 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:41:27,619 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:41:27,624 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:41:27,629 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:41:27,959 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:41:27,979 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:41:27,979 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:41:27,980 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:41:27,981 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:41:27,982 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:41:27,983 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:41:27,983 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:41:27,983 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:41:27,983 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:41:27,983 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:41:27,984 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:41:27,985 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:41:27,985 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:41:27,985 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:41:27,985 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:41:27,985 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:41:27,986 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:41:27,986 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:41:27,989 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:41:27,989 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:41:27,989 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:41:27,989 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:41:27,990 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:41:27,990 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:41:28,008 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 13:41:28,013 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 13:41:28,280 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:41:28,471 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:41:28,482 INFO  [DatabaseMetadata]  - table not found: Program
+2016-01-15 13:41:28,483 INFO  [DatabaseMetadata]  - table not found: Stacja
+2016-01-15 13:41:28,484 INFO  [DatabaseMetadata]  - table not found: Program
+2016-01-15 13:41:28,485 INFO  [DatabaseMetadata]  - table not found: Stacja
+2016-01-15 13:41:28,861 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:48:47,521 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:48:47,542 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:48:47,544 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:48:47,546 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:48:47,550 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:48:47,668 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:48:47,683 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:48:47,719 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:48:47,767 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:48:47,767 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:48:47,767 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:48:47,795 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:48:47,800 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:48:47,806 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:48:47,810 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:48:48,112 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:48:48,129 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:48:48,129 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:48:48,131 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:48:48,132 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:48:48,132 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:48:48,133 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:48:48,133 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:48:48,133 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:48:48,133 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:48:48,133 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:48:48,134 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:48:48,134 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:48:48,134 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:48:48,134 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:48:48,134 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:48:48,134 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:48:48,135 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:48:48,135 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:48:48,138 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:48:48,138 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:48:48,138 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:48:48,138 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:48:48,139 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:48:48,139 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:48:48,156 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1b843ba
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@ec96c6
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@16d6c1e
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@c9bd38
+2016-01-15 13:48:48,160 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@12e19ca
+2016-01-15 13:48:48,406 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:48:48,632 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:48:48,681 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:48:48,681 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:48:48,681 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:48:48,681 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10108_10109, sys_idx_10117]
+2016-01-15 13:48:48,686 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:48:48,686 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:48:48,686 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:48:48,686 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10113_10114]
+2016-01-15 13:48:49,021 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:49:33,361 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:49:33,367 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:49:33,368 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:49:33,371 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:49:33,374 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:49:33,474 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:49:33,490 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:49:33,517 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:49:33,561 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:49:33,561 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:49:33,561 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:49:33,592 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:49:33,597 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:49:33,604 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:49:33,608 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:49:33,916 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:49:33,933 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:49:33,933 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:49:33,935 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:49:33,936 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:49:33,936 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:49:33,937 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:49:33,937 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:49:33,937 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:49:33,937 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:49:33,937 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:49:33,938 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:49:33,938 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:49:33,938 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:49:33,938 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:49:33,938 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:49:33,939 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:49:33,939 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:49:33,939 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:49:33,942 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:49:33,942 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:49:33,943 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:49:33,943 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:49:33,943 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:49:33,943 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:49:33,961 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1b843ba
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@ec96c6
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1659b30
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@16d6c1e
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:49:33,966 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@13529a
+2016-01-15 13:49:33,967 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@c9bd38
+2016-01-15 13:49:33,967 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@12e19ca
+2016-01-15 13:49:34,212 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:49:34,401 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:49:34,433 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:49:34,433 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:49:34,433 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:49:34,433 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10108_10109, sys_idx_10117]
+2016-01-15 13:49:34,437 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:49:34,437 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:49:34,437 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:49:34,437 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10113_10114]
+2016-01-15 13:49:34,826 INFO  [SessionFactoryImpl]  - closing
+2016-01-15 13:52:11,074 INFO  [Version]  - Hibernate Commons Annotations 3.2.0.Final
+2016-01-15 13:52:11,084 INFO  [Environment]  - Hibernate 3.6.6.Final
+2016-01-15 13:52:11,086 INFO  [Environment]  - hibernate.properties not found
+2016-01-15 13:52:11,091 INFO  [Environment]  - Bytecode provider name : javassist
+2016-01-15 13:52:11,094 INFO  [Environment]  - using JDK 1.4 java.sql.Timestamp handling
+2016-01-15 13:52:11,216 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Program
+2016-01-15 13:52:11,235 INFO  [QueryBinder]  - Binding Named query: program.wszystkie => SELECT p FROM Program p
+2016-01-15 13:52:11,255 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Program on table Program
+2016-01-15 13:52:11,302 INFO  [AnnotationBinder]  - Binding entity from annotated class: com.stelmachk.hibernate.model.domain.Stacja
+2016-01-15 13:52:11,303 INFO  [QueryBinder]  - Binding Named query: stacja.wszystkie => SELECT s FROM Stacja s
+2016-01-15 13:52:11,303 INFO  [EntityBinder]  - Bind entity com.stelmachk.hibernate.model.domain.Stacja on table Stacja
+2016-01-15 13:52:11,337 INFO  [CollectionBinder]  - Mapping collection: com.stelmachk.hibernate.model.domain.Stacja.programy -> Program
+2016-01-15 13:52:11,342 INFO  [Configuration]  - Hibernate Validator not found: ignoring
+2016-01-15 13:52:11,348 INFO  [HibernateSearchEventListenerRegister]  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-01-15 13:52:11,355 INFO  [ConnectionProviderFactory]  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2016-01-15 13:52:11,671 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:52:11,692 INFO  [SettingsFactory]  - Database ->
+       name : HSQL Database Engine
+    version : 2.3.3
+      major : 2
+      minor : 3
+2016-01-15 13:52:11,693 INFO  [SettingsFactory]  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.2.4
+      major : 2
+      minor : 2
+2016-01-15 13:52:11,694 INFO  [TransactionFactoryFactory]  - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2016-01-15 13:52:11,695 INFO  [TransactionManagerLookupFactory]  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-01-15 13:52:11,695 INFO  [SettingsFactory]  - Automatic flush during beforeCompletion(): disabled
+2016-01-15 13:52:11,695 INFO  [SettingsFactory]  - Automatic session close at end of transaction: disabled
+2016-01-15 13:52:11,696 INFO  [SettingsFactory]  - JDBC batch size: 15
+2016-01-15 13:52:11,696 INFO  [SettingsFactory]  - JDBC batch updates for versioned data: disabled
+2016-01-15 13:52:11,696 INFO  [SettingsFactory]  - Scrollable result sets: enabled
+2016-01-15 13:52:11,697 INFO  [SettingsFactory]  - JDBC3 getGeneratedKeys(): enabled
+2016-01-15 13:52:11,697 INFO  [SettingsFactory]  - Connection release mode: auto
+2016-01-15 13:52:11,697 INFO  [SettingsFactory]  - Default batch fetch size: 1
+2016-01-15 13:52:11,698 INFO  [SettingsFactory]  - Generate SQL with comments: disabled
+2016-01-15 13:52:11,698 INFO  [SettingsFactory]  - Order SQL updates by primary key: disabled
+2016-01-15 13:52:11,698 INFO  [SettingsFactory]  - Order SQL inserts for batching: disabled
+2016-01-15 13:52:11,698 INFO  [SettingsFactory]  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-01-15 13:52:11,700 INFO  [ASTQueryTranslatorFactory]  - Using ASTQueryTranslatorFactory
+2016-01-15 13:52:11,700 INFO  [SettingsFactory]  - Query language substitutions: {}
+2016-01-15 13:52:11,700 INFO  [SettingsFactory]  - JPA-QL strict compliance: disabled
+2016-01-15 13:52:11,700 INFO  [SettingsFactory]  - Second-level cache: enabled
+2016-01-15 13:52:11,700 INFO  [SettingsFactory]  - Query cache: disabled
+2016-01-15 13:52:11,700 INFO  [SettingsFactory]  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-01-15 13:52:11,701 INFO  [SettingsFactory]  - Optimize cache for minimal puts: disabled
+2016-01-15 13:52:11,701 INFO  [SettingsFactory]  - Structured second-level cache entries: disabled
+2016-01-15 13:52:11,705 INFO  [SettingsFactory]  - Echoing all SQL to stdout
+2016-01-15 13:52:11,705 INFO  [SettingsFactory]  - Statistics: disabled
+2016-01-15 13:52:11,705 INFO  [SettingsFactory]  - Deleted entity synthetic identifier rollback: disabled
+2016-01-15 13:52:11,705 INFO  [SettingsFactory]  - Default entity-mode: pojo
+2016-01-15 13:52:11,706 INFO  [SettingsFactory]  - Named query checking : enabled
+2016-01-15 13:52:11,706 INFO  [SettingsFactory]  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-01-15 13:52:11,730 INFO  [SessionFactoryImpl]  - building session factory
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1c53a33
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1b7f657
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@17b0699
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@37d3ed
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@df6e3a
+2016-01-15 13:52:11,738 INFO  [BasicTypeRegistry]  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3631f8
+2016-01-15 13:52:11,739 INFO  [BasicTypeRegistry]  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@158b9e9
+2016-01-15 13:52:12,032 INFO  [SessionFactoryObjectFactory]  - Not binding factory to JNDI, no JNDI name configured
+2016-01-15 13:52:12,224 INFO  [Dialect]  - Using dialect: org.hibernate.dialect.HSQLDialect
+2016-01-15 13:52:12,251 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.PROGRAM
+2016-01-15 13:52:12,251 INFO  [TableMetadata]  - columns: [id_stacja, id, nazwa, rodzaj]
+2016-01-15 13:52:12,251 INFO  [TableMetadata]  - foreign keys: [fk50c7b6647575a70]
+2016-01-15 13:52:12,251 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10108_10109, sys_idx_10117]
+2016-01-15 13:52:12,257 INFO  [TableMetadata]  - table found: PUBLIC.PUBLIC.STACJA
+2016-01-15 13:52:12,257 INFO  [TableMetadata]  - columns: [stacja, id, opis]
+2016-01-15 13:52:12,257 INFO  [TableMetadata]  - foreign keys: []
+2016-01-15 13:52:12,257 INFO  [TableMetadata]  - indexes: [sys_idx_sys_pk_10113_10114]
+2016-01-15 13:52:12,662 INFO  [SessionFactoryImpl]  - closing

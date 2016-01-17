@@ -91,7 +91,7 @@ public class ManagerImpl implements Manager {
 	public List<Stacja> dajWszystkieStacje() {
 		return sf.getCurrentSession().getNamedQuery("stacja.wszystkie").list();
 	}
-	@Override//Wyszukiwanie w stacji danego programu
+	@Override//Wyszukiwanie w stacji danego programu // zmiana na like
 	public List<Program> wyszukajProgramyWgWzorcaStacjii(String wzorzec) {
 		List<Program> lp = new ArrayList<Program>();
 		Pattern pa = Pattern.compile(".*" + wzorzec + ".*");
